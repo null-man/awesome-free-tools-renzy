@@ -6,6 +6,8 @@
 ![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)
 [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-purple.svg)](CODE_OF_CONDUCT.md)
 
+**🌐 Language:** English · [Bahasa Indonesia](README.id.md)
+
 The internet is full of "free" tools that ask for your credit card on step two. **This list is different.** Every entry here is something you can actually use for free, today, with honest labels so you know exactly what you're getting.
 
 🌏 *Curated with love for makers everywhere — and a little extra for the Indonesian dev community.* 🇮🇩
