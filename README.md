@@ -2,39 +2,33 @@
 
 > A curated list of **genuinely free** tools and resources — no trials, no credit card, no "free for 7 days then we charge you." 🆓
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)
 [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-purple.svg)](CODE_OF_CONDUCT.md)
 
 The internet is full of "free" tools that ask for your credit card on step two. **This list is different.** Every entry here is something you can actually use for free, today, with honest labels so you know exactly what you're getting.
 
 🌏 *Curated with love for makers everywhere — and a little extra for the Indonesian dev community.* 🇮🇩
 
----
+**What the labels mean:**
 
-## 🏷️ Legend
-
-| Label | Meaning |
-|-------|---------|
-| 🔓 | **Open source** — free forever, you can read/modify the code |
-| 🆓 | **Free** — proprietary but genuinely free; no paid tier needed for full use |
-| 💎 | **Free tier** — freemium, but the free plan is generous enough to rely on |
-| 🌐 | **No install** — runs in your browser |
+- 🔓 &nbsp;**Open source** — free forever; you can read and modify the code.
+- 🆓 &nbsp;**Free** — proprietary but genuinely free; no paid tier needed for full use.
+- 💎 &nbsp;**Free tier** — freemium, but the free plan is generous enough to rely on.
+- 🌐 &nbsp;**No install** — runs in your browser.
 
 We only list freemium (💎) tools when the free tier is *actually useful on its own* — not a crippled demo.
 
----
-
-## 📑 Contents
+## Contents
 
 - [📝 Notes & Knowledge](#-notes--knowledge)
 - [✅ Tasks & Project Management](#-tasks--project-management)
 - [🎨 Design & Graphics](#-design--graphics)
-- [🖼️ Free Stock Assets](#️-free-stock-assets)
+- [📷 Free Stock Assets](#-free-stock-assets)
 - [🎬 Audio & Video](#-audio--video)
-- [🗂️ Office & Documents](#️-office--documents)
+- [📄 Office & Documents](#-office--documents)
 - [🔐 Privacy & Security](#-privacy--security)
-- [🛠️ Utilities](#️-utilities)
+- [🧰 Utilities](#-utilities)
 - [💻 Developer Tools](#-developer-tools)
 - [🤖 AI Tools](#-ai-tools)
 - [📚 Learning](#-learning)
@@ -75,7 +69,7 @@ We only list freemium (💎) tools when the free tier is *actually useful on its
 - [Figma](https://figma.com) — Collaborative interface design; free for individuals. 💎
 - [Canva](https://canva.com) — Template-driven design for non-designers; big free library. 💎
 
-## 🖼️ Free Stock Assets
+## 📷 Free Stock Assets
 
 - [Unsplash](https://unsplash.com) — High-resolution photos, free to use. 🆓
 - [Pexels](https://www.pexels.com) — Free stock photos and videos. 🆓
@@ -97,7 +91,7 @@ We only list freemium (💎) tools when the free tier is *actually useful on its
 - [HandBrake](https://handbrake.fr) — Convert almost any video to common formats. 🔓
 - [LosslessCut](https://github.com/mifi/lossless-cut) — Trim and cut videos without re-encoding. 🔓
 
-## 🗂️ Office & Documents
+## 📄 Office & Documents
 
 - [LibreOffice](https://www.libreoffice.org) — Complete office suite (docs, sheets, slides). 🔓
 - [ONLYOFFICE](https://www.onlyoffice.com) — Office suite with excellent MS Office compatibility. 🔓
@@ -115,7 +109,7 @@ We only list freemium (💎) tools when the free tier is *actually useful on its
 - [Proton](https://proton.me) — Encrypted mail, drive and calendar with a free tier. 💎
 - [Proton VPN](https://protonvpn.com) — One of the few free VPNs with no data cap. 💎
 
-## 🛠️ Utilities
+## 🧰 Utilities
 
 - [7-Zip](https://www.7-zip.org) — High-ratio file archiver for almost every format. 🔓
 - [PowerToys](https://github.com/microsoft/PowerToys) — Power-user utilities for Windows from Microsoft. 🔓
@@ -176,6 +170,6 @@ Every contributor gets credit. Let's build the most trustworthy free-tools list 
 
 ## 📄 License
 
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](LICENSE)
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, the contributors have waived all copyright and related rights to this work under [CC0 1.0 Universal](LICENSE).
