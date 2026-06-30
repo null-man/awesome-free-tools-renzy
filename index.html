@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Awesome Free Tools — genuinely free, no credit card</title>
+<meta name="description" content="A searchable, curated list of genuinely free tools and resources — no trials, no credit card. Open source, free, and useful free-tier picks." />
+<meta property="og:title" content="Awesome Free Tools" />
+<meta property="og:description" content="A curated list of genuinely free tools and resources — no trials, no credit card." />
+<meta property="og:image" content="./.github/social-preview.png" />
+<meta name="theme-color" content="#0d1117" />
+<style>
+  :root {
+    --bg: #0d1117; --surface: #161b22; --surface-2: #1c2230;
+    --border: #30363d; --text: #e6edf3; --muted: #8b949e;
+    --green: #3fb950; --blue: #58a6ff; --purple: #bc8cff; --orange: #f0883e;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg); color: var(--text); line-height: 1.55;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  header { border-top: 4px solid var(--green); padding: 56px 0 28px; text-align: center;
+           background: radial-gradient(120% 120% at 50% -10%, #14202e 0%, var(--bg) 60%); }
+  .eyebrow { color: var(--green); font-weight: 700; letter-spacing: .22em; font-size: .72rem; text-transform: uppercase; }
+  h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); font-weight: 800; letter-spacing: -.02em; margin: 10px 0 8px; }
+  .tagline { color: var(--muted); font-size: clamp(1rem, 2.5vw, 1.22rem); max-width: 640px; margin: 0 auto; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 22px 0 0; }
+
+  /* Controls */
+  .controls { position: sticky; top: 0; z-index: 20; background: rgba(13,17,23,.85);
+              backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding: 14px 0; margin-top: 26px; }
+  .search { position: relative; max-width: 560px; margin: 0 auto 12px; }
+  .search input {
+    width: 100%; padding: 12px 16px 12px 44px; font-size: 1rem; color: var(--text);
+    background: var(--surface); border: 1px solid var(--border); border-radius: 999px; outline: none;
+  }
+  .search input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(88,166,255,.2); }
+  .search svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); fill: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .chip {
+    cursor: pointer; user-select: none; font-size: .82rem; font-weight: 600; padding: 6px 13px;
+    border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--muted);
+    transition: all .12s ease; white-space: nowrap;
+  }
+  .chip:hover { color: var(--text); border-color: #4b5563; }
+  .chip.active { background: var(--green); color: #04130a; border-color: var(--green); }
+  .badge {
+    display: inline-flex; align-items: center; gap: 5px; font-size: .72rem; font-weight: 600;
+    padding: 3px 9px; border-radius: 999px; border: 1px solid; white-space: nowrap;
+  }
+  .badge.green  { color: #7ee787; border-color: rgba(63,185,80,.5);  background: rgba(63,185,80,.12); }
+  .badge.blue   { color: #79c0ff; border-color: rgba(88,166,255,.5); background: rgba(88,166,255,.12); }
+  .badge.purple { color: #d2a8ff; border-color: rgba(188,140,255,.5);background: rgba(188,140,255,.12); }
+  .badge.orange { color: #ffa657; border-color: rgba(240,136,62,.5); background: rgba(240,136,62,.12); }
+
+  /* Content */
+  main { padding: 26px 0 60px; }
+  .meta { color: var(--muted); font-size: .9rem; text-align: center; margin-bottom: 22px; }
+  .cat { margin: 34px 0 14px; font-size: 1.35rem; font-weight: 700; scroll-margin-top: 130px; }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 16px 18px; transition: transform .12s ease, border-color .12s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: #4b5563; }
+  .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+  .card h3 a::after { content: " ↗"; color: var(--muted); font-size: .8rem; opacity: 0; transition: opacity .12s; }
+  .card:hover h3 a::after { opacity: 1; }
+  .card p { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+  .card .badges { display: flex; flex-wrap: wrap; gap: 6px; }
+  .empty, .state { text-align: center; color: var(--muted); padding: 60px 20px; }
+  .state code { background: var(--surface-2); padding: 2px 7px; border-radius: 6px; color: var(--text); }
+
+  footer { border-top: 1px solid var(--border); padding: 30px 0; text-align: center; color: var(--muted); font-size: .9rem; }
+  footer a { font-weight: 600; }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">A Curated Awesome List</div>
+    <h1>Awesome Free Tools</h1>
+    <p class="tagline">Genuinely free tools &amp; resources — no trials, no credit card. Honest labels on every single one.</p>
+    <div class="legend">
+      <span class="badge green">🔓 Open source</span>
+      <span class="badge blue">🆓 Free</span>
+      <span class="badge purple">💎 Free tier</span>
+      <span class="badge orange">🌐 Browser</span>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="search">
+      <svg width="18" height="18" viewBox="0 0 24 24"><path d="M21 21l-4.35-4.35M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" fill="none" stroke="#8b949e" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="search" type="search" placeholder="Search 100+ free tools…" autocomplete="off" aria-label="Search tools" />
+    </div>
+    <div class="chips" id="labelChips" aria-label="Filter by type"></div>
+    <div class="chips" id="catChips" style="margin-top:8px" aria-label="Filter by category"></div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <div class="meta" id="meta">Loading the list…</div>
+    <div id="results"></div>
+    <div class="empty hidden" id="empty">No tools match your search. Try a different keyword. 🤔</div>
+    <div class="state hidden" id="error">
+      <p>Couldn't load the list directly from the file system.</p>
+      <p style="margin-top:10px">This page reads <code>README.md</code> over HTTP. View it on <strong>GitHub Pages</strong>, or run a local server: <code>python -m http.server</code> then open <code>localhost:8000</code>.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    Built by the community · <a href="README.md">Browse the README</a> · <a href="CONTRIBUTING.md">Add a tool</a> · CC0 / public domain
+  </div>
+</footer>
+
+<script>
+const LABELS = {
+  '🔓': { key:'oss',      text:'Open source', cls:'green'  },
+  '🆓': { key:'free',     text:'Free',        cls:'blue'   },
+  '💎': { key:'freemium', text:'Free tier',   cls:'purple' },
+  '🌐': { key:'web',      text:'Browser',     cls:'orange' },
+};
+const SKIP = /^(contents|daftar isi|contributing|kontribusi|license|lisensi|legend)$/i;
+
+const state = { tools: [], cats: [], q: '', label: null, cat: null };
+
+function cleanTitle(t){ return t.replace(/[^\p{L}\p{N}\s&+.#/-]/gu, '').trim(); }
+
+function parseReadme(md){
+  const lines = md.split('\n');
+  const cats = []; let cur = null;
+  for (const line of lines){
+    const h = line.match(/^##\s+(.+?)\s*$/);
+    if (h){
+      const title = h[1].trim();
+      if (SKIP.test(cleanTitle(title))) { cur = null; continue; }
+      cur = { title, items: [] }; cats.push(cur); continue;
+    }
+    const m = line.match(/^[-*]\s+\[([^\]]+)\]\((https?:\/\/[^)]+)\)\s*[—–-]\s*(.+?)\s*$/);
+    if (m && cur){
+      const [, name, url, restRaw] = m;
+      const labels = [];
+      for (const e of Object.keys(LABELS)) if (restRaw.includes(e)) labels.push(LABELS[e]);
+      let desc = restRaw;
+      for (const e of Object.keys(LABELS)) desc = desc.split(e).join('');
+      desc = desc.replace(/\s+/g,' ').trim();
+      cur.items.push({ name, url, desc, labels, cat: cur.title });
+    }
+  }
+  return cats;
+}
+
+function render(){
+  const q = state.q.toLowerCase();
+  const results = document.getElementById('results');
+  results.innerHTML = '';
+  let shown = 0;
+  for (const cat of state.cats){
+    if (state.cat && cat.title !== state.cat) continue;
+    const matches = cat.items.filter(it => {
+      if (state.label && !it.labels.some(l => l.key === state.label)) return false;
+      if (q && !(it.name.toLowerCase().includes(q) || it.desc.toLowerCase().includes(q) || it.cat.toLowerCase().includes(q))) return false;
+      return true;
+    });
+    if (!matches.length) continue;
+    shown += matches.length;
+    const h = document.createElement('h2'); h.className = 'cat'; h.textContent = cat.title;
+    results.appendChild(h);
+    const grid = document.createElement('div'); grid.className = 'grid';
+    for (const it of matches){
+      const card = document.createElement('div'); card.className = 'card';
+      const badges = it.labels.map(l => `<span class="badge ${l.cls}">${l.text}</span>`).join('');
+      card.innerHTML = `<h3><a href="${it.url}" target="_blank" rel="noopener">${it.name}</a></h3>`
+        + `<p>${it.desc}</p><div class="badges">${badges}</div>`;
+      grid.appendChild(card);
+    }
+    results.appendChild(grid);
+  }
+  document.getElementById('empty').classList.toggle('hidden', shown !== 0);
+  const total = state.tools.length;
+  document.getElementById('meta').textContent = shown === total
+    ? `${total} genuinely free tools, all in one place.`
+    : `Showing ${shown} of ${total} tools.`;
+}
+
+function buildChips(){
+  const labelChips = document.getElementById('labelChips');
+  for (const e of Object.keys(LABELS)){
+    const l = LABELS[e];
+    const c = document.createElement('span'); c.className = 'chip'; c.textContent = `${e} ${l.text}`;
+    c.onclick = () => { state.label = state.label === l.key ? null : l.key;
+      [...labelChips.children].forEach(x => x.classList.remove('active'));
+      if (state.label) c.classList.add('active'); render(); };
+    labelChips.appendChild(c);
+  }
+  const catChips = document.getElementById('catChips');
+  const all = document.createElement('span'); all.className = 'chip active'; all.textContent = 'All categories';
+  all.onclick = () => { state.cat = null; [...catChips.children].forEach(x => x.classList.remove('active')); all.classList.add('active'); render(); };
+  catChips.appendChild(all);
+  for (const cat of state.cats){
+    const c = document.createElement('span'); c.className = 'chip'; c.textContent = cat.title;
+    c.onclick = () => { state.cat = state.cat === cat.title ? null : cat.title;
+      [...catChips.children].forEach(x => x.classList.remove('active'));
+      if (state.cat) c.classList.add('active'); else all.classList.add('active'); render(); };
+    catChips.appendChild(c);
+  }
+}
+
+document.getElementById('search').addEventListener('input', e => { state.q = e.target.value; render(); });
+
+fetch('README.md')
+  .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.text(); })
+  .then(md => {
+    state.cats = parseReadme(md);
+    state.tools = state.cats.flatMap(c => c.items);
+    if (!state.tools.length) throw new Error('no tools parsed');
+    document.getElementById('search').placeholder = `Search ${state.tools.length} free tools…`;
+    buildChips();
+    render();
+  })
+  .catch(() => {
+    document.getElementById('meta').classList.add('hidden');
+    document.getElementById('error').classList.remove('hidden');
+  });
+</script>
+</body>
+</html>
