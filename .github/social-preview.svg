@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3fb950"/>
+      <stop offset="100%" stop-color="#2ea44f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1280" height="10" fill="url(#accent)"/>
+
+  <!-- subtle dotted texture -->
+  <g fill="#21262d">
+    <circle cx="1140" cy="120" r="4"/><circle cx="1180" cy="120" r="4"/><circle cx="1220" cy="120" r="4"/>
+    <circle cx="1140" cy="160" r="4"/><circle cx="1180" cy="160" r="4"/><circle cx="1220" cy="160" r="4"/>
+    <circle cx="1140" cy="200" r="4"/><circle cx="1180" cy="200" r="4"/><circle cx="1220" cy="200" r="4"/>
+  </g>
+
+  <!-- eyebrow -->
+  <text x="100" y="180" fill="#3fb950" font-size="30" font-weight="700" letter-spacing="6">A CURATED AWESOME LIST</text>
+
+  <!-- title -->
+  <text x="98" y="300" fill="#ffffff" font-size="104" font-weight="800">Awesome Free Tools</text>
+
+  <!-- tagline -->
+  <text x="100" y="370" fill="#8b949e" font-size="38" font-weight="400">Genuinely free tools &amp; resources — no trials, no credit card.</text>
+
+  <!-- label pills -->
+  <g font-size="28" font-weight="600">
+    <g>
+      <rect x="100" y="430" width="220" height="64" rx="32" fill="#1f6feb22" stroke="#1f6feb" stroke-width="2"/>
+      <text x="210" y="471" fill="#79c0ff" text-anchor="middle">Open Source</text>
+    </g>
+    <g>
+      <rect x="340" y="430" width="140" height="64" rx="32" fill="#3fb95022" stroke="#3fb950" stroke-width="2"/>
+      <text x="410" y="471" fill="#7ee787" text-anchor="middle">Free</text>
+    </g>
+    <g>
+      <rect x="500" y="430" width="200" height="64" rx="32" fill="#a371f722" stroke="#a371f7" stroke-width="2"/>
+      <text x="600" y="471" fill="#d2a8ff" text-anchor="middle">Free Tier</text>
+    </g>
+    <g>
+      <rect x="720" y="430" width="240" height="64" rx="32" fill="#f0883e22" stroke="#f0883e" stroke-width="2"/>
+      <text x="840" y="471" fill="#ffa657" text-anchor="middle">Runs in Browser</text>
+    </g>
+  </g>
+
+  <!-- footer -->
+  <text x="100" y="568" fill="#6e7681" font-size="26" font-weight="500">Open source · CC0 · Pull requests welcome — built by the community</text>
+</svg>
