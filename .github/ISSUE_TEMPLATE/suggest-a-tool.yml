@@ -1,0 +1,72 @@
+name: 💡 Suggest a tool
+description: Recommend a genuinely free tool to add to the list
+title: "[Tool] <tool name>"
+labels: ["tool suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a tool! 🎉 Fill this in and a contributor will add it.
+        Prefer to add it yourself? Even better — see the [Contributing Guide](../blob/main/CONTRIBUTING.md).
+  - type: input
+    id: name
+    attributes:
+      label: Tool name
+      placeholder: e.g. Excalidraw
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official website or repository URL
+      placeholder: https://excalidraw.com
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Notes & Knowledge
+        - Tasks & Project Management
+        - Design & Graphics
+        - Free Stock Assets
+        - Audio & Video
+        - Office & Documents
+        - Privacy & Security
+        - Utilities
+        - Developer Tools
+        - AI Tools
+        - Learning
+        - Productivity & Web Apps
+        - Other / new category
+    validations:
+      required: true
+  - type: dropdown
+    id: pricing
+    attributes:
+      label: How is it free?
+      options:
+        - "🔓 Open source"
+        - "🆓 Free (proprietary, but fully free)"
+        - "💎 Freemium with a genuinely useful free tier"
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: One-line description
+      placeholder: Hand-drawn-style whiteboard for diagrams and sketches.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Quick checks
+      options:
+        - label: This tool is actively maintained and the link works.
+          required: true
+        - label: The free tier is genuinely useful (not a trial or crippled demo).
+          required: true
+        - label: I searched the list and it's not already there.
+          required: true

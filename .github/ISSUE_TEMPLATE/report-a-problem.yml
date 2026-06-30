@@ -1,0 +1,31 @@
+name: 🐛 Report a problem
+description: A dead link, or a tool that went paid or is no longer maintained
+title: "[Problem] <tool name>"
+labels: ["problem report"]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Which tool or entry?
+      placeholder: e.g. SomeTool in Design & Graphics
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What's wrong?
+      options:
+        - Dead or broken link
+        - Tool is no longer free
+        - Tool is abandoned / unmaintained
+        - Wrong label or description
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Anything that helps us fix it — a new URL, a screenshot, what changed, etc.
+    validations:
+      required: false
