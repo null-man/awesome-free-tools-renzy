@@ -75,6 +75,8 @@ We only list freemium (💎) tools when the free tier is *actually useful on its
 - [Photopea](https://www.photopea.com) — Photoshop-like editor that runs entirely in your browser. 🆓 🌐
 - [Figma](https://figma.com) — Collaborative interface design; free for individuals. 💎
 - [Canva](https://canva.com) — Template-driven design for non-designers; big free library. 💎
+- [PromptImage](https://promptimage.cloud) — Free AI image & video studio with prompt library; signup credits, no card. 💎 🌐
+- [TeslaWraps](https://teslawraps.design) — Free browser Tesla Paint Shop wrap editor; core editing + PNG export free, no account. 🆓 🌐
 - [Pixlr](https://pixlr.com) — Browser-based photo editor with a capable free tier. 💎 🌐
 
 ## 📐 Diagrams & Whiteboards
